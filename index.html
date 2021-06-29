@@ -54,7 +54,7 @@
         </div>
      
       </footer>
-     <footer class="text">
+     <footer id="open" class="text">
         <div class="followers center">
           <p><b>747</b></p>
           <p class="desc">Solo Victories</p>
@@ -73,13 +73,59 @@
     </div>
 
   </div>
-
+<div id="modal" class="modal">
+  <div class="modal-content">
+<canvas id="myChart" style="width:100%;max-width:600px;"></canvas>
+  </div>
+</div>
 </body>
 <style>
 /* css styling for ./p/${} */
 /* MIT LICENSE */
 /* Joe Lee All Right Reserved */
 </style>
+  <script>
+var modal = document.getElementById("modal");
+var open = document.getElementById("open");
+
+open.onclick = function() {
+  modal.style.display = "block";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+
+<script>
+
+
+new Chart("myChart", {
+  type: "line",
+  data: {
+    labels: [1,2,3,4,5],
+    datasets: [{
+      fill: false,
+      pointRadius: 1,
+      borderColor: "rgba(255,0,0,0.5)",
+      data: [2222,23,233,4353,35]
+    }]
+  },    
+  options: {
+    legend: {display: false},
+    title: {
+      display: false,
+      fontSize: 16
+    }
+  }
+});
+
+</script>
+
  <script>
     AOS.init({ delay: 500 });
   </script>
