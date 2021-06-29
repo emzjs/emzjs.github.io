@@ -174,9 +174,21 @@ body {
   border-radius:15px;
 }
 
-@media only screen and (max-width: 600px) {
-  .canvas {
+.canvas {
   width:100%;
   max-width:400px;
   }
+
+@media only screen and (max-width: 600px) {
+  .canvas {
+  width:100%;
+  max-width:320px;
+  }
+  .modal-content {
+  margin: auto;
+  padding: 10px;
+  width: 350px;
+  background-color:#323633;
+  border-radius:15px;
+}
 }
