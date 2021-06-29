@@ -169,7 +169,7 @@ body {
 .modal-content {
   margin: auto;
   padding: 10px;
-  width: 80%;
+  width: 500px;
   background-color:#323633;
   border-radius:15px;
 }
