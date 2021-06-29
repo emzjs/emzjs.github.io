@@ -31,7 +31,8 @@ a {
 }
 
 body {
-  font-family: Kumbh Sans; 
+  /*font-family: Kumbh Sans; */
+  font-family: 'Roboto', sans-serif;
   background-color: #7289DA;
 
 }
