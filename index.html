@@ -37,7 +37,7 @@
 
       </div>
         <div class="fade_card">
-      <footer>
+      <footer class="text">
         <div class="center">
           <p><b>1682028</b></p>
           <p class="desc">Trophies</p>
@@ -52,7 +52,7 @@
         </div>
      
       </footer>
-     <footer>
+     <footer id="open" class="text">
         <div class="followers center" id="discord">
         </div>
         <div class="followers center">
@@ -66,8 +66,30 @@
     </div>
 
   </div>
-
+<center>
+    <div id="modal" class="modal">
+  <div class="modal-content">
+<canvas id="chart" class="canvas"></canvas>
+  </div>
+</div>
+    </center>
+    
 </body>
+  <script src="https://bs.is-a.dev/badge.js"></script>
+  <script>
+
+new Chart("chart", {
+  type: "line",
+  data: {"labels":["May 9","May 11","May 12","May 14","May 15","May 17","May 18","May 20","May 21","May 22","May 23","May 24","May 25","May 26","May 27","May 29","May 30","May 31","Jun 2","Jun 3","Jun 4","Jun 5","Jun 6","Jun 7","Jun 8","Jun 10","Jun 11","Jun 12","Jun 13","Jun 16","Jun 17","Jun 18","Jun 19","Jun 20","Jun 21","Jun 22","Jun 23","Jun 24","Jun 25","Jun 26","Jun 27","Jun 28","Jun 29","Jun 30","Jul 1","Jul 2","Jul 3","Jul 4","Jul 5","Jul 6","Jul 7","Jul 8"],"datasets":[{"fill":false,"pointRadius":1,"borderColor":"rgba(255,0,0,0.5)","data":[23154,23385,23599,23904,24085,24085,24080,24225,24232,24302,24380,24388,24457,24514,24514,24802,25004,24872,24925,24929,24931,24967,24967,25057,25066,25304,25380,25447,25556,25589,25599,25599,25646,25687,25687,25705,25705,25717,25718,25785,25783,25933,25753,25753,25771,25771,25752,25816,25821,25967,26029,26029]}]},    
+  options: {
+    legend: {display: false},
+    title: {
+      display: false,
+      fontSize: 16
+    }
+  }
+});
+</script>
 <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
  <script>
     AOS.init({ delay: 500 });
