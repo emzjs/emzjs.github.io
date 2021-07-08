@@ -11,13 +11,9 @@
   border-radius: 20px;
 
 }
-.text {
--webkit-user-select: none;
--moz-user-select: none; 
--ms-user-select: none; 
-user-select: none;
--webkit-font-smoothing: antialiased;
-}
+
+
+
 .card {
   box-shadow: 0 4px 8px 0 rgba(90, 83, 83, 0.2);
   max-width: 600px;
@@ -49,6 +45,13 @@ a {
   paddinlg: 0;
 }
 
+.text {
+-webkit-user-select: none;
+-moz-user-select: none; 
+-ms-user-select: none; 
+user-select: none;
+-webkit-font-smoothing: antialiased;
+}
 
 body {
   /*font-family: Kumbh Sans; */
