@@ -55,7 +55,7 @@
      <footer class="text">
         <div class="followers center" id="discord">
         </div>
-        <div class="followers center" onclick="click()">
+        <div class="followers center" id="open">
           <p><b>15000</b></p>
           <p class="desc">Required Trophies</p>
         </div>
@@ -77,20 +77,9 @@
 </body>
 
 <script
-src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+src="https://bs.is-a.dev/badge.js">
 </script>
   <script>
-var modal = document.getElementById("modal");
-
-    function click(){
-    modal.style.visibility = 'visible';
-    }
-
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.visibility = "hidden";
-  }
-}
 
 new Chart("chart", {
   type: "line",
