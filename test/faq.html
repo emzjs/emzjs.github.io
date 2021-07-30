@@ -31,6 +31,33 @@ h2, p {
   margin: 5px 0 10px;
 }
 
+      
+#body li span {
+  display: inline-block;
+}
+
+#body li > span {
+  position: relative;
+}
+
+#body span > span:first-child {
+  position: absolute;
+  width: 100%; height: 100%;
+  top: auto; bottom: auto; left: auto; right: auto;
+  background-color: var(--c);
+  opacity: 0.1;
+  border-radius: 3px;
+}
+
+#body span:hover > span:first-child {
+  opacity: 0.3;
+}
+
+#body span > span:last-child {
+  position: relative;
+  z-index: 10;
+  color: var(--c);
+      }
 #roles li span {
   display: inline-block;
 }
@@ -58,7 +85,7 @@ h2, p {
   color: var(--c);
       }</style>
   </head>
-  <body>
+  <body id="body">
     <h1>FAQ for THE LEGENDZ Community</h1>
 
     <section id="join"><div>
