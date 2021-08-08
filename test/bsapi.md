@@ -37,7 +37,7 @@ ______________________________________
 
 ### Usage 
 
-```
+```js
 const bs = require('bsapi.js')
 
 bs.<Request_Type>('Type','String').then((response) => {})
@@ -45,7 +45,8 @@ bs.<Request_Type>('Type','String').then((response) => {})
 
 - #### Example Usage
 `Get` A Player's In-Game Profile Information
-```
+
+```js
 const bs = require('bsapi.js')
 
 bs.get('player','82PGQVJ2L').then((response) => {
