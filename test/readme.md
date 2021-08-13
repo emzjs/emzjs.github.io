@@ -1,9 +1,7 @@
-### About
-Sick of short urls redirecting you to websites that you don't want to go ? Not sure what kind of websites you're going to visit ? You've came to the right place ! 
-  
-#### How It Works
-After you enter a url, our server will crawl the website and search for meta tags, for example : description, title, keywords, author and more. After that we'll try to take a screenshot of the page. Then we'll send all the information we've got to you. 
-  
-<form action="/action_page">
-<input type="text" name="?" onChange="form.submit()">
-</form>
+<center>
+### Important
+
+- Please be aware of some datas such as `pageRefresh`, `redirectedUrl` and `hostname`, they can tell if the page is redirecting you to another site. 
+
+- Some sites may use something else to redirect the page, wait for 30-50 seconds until the `finalUrl` data appears. ( May take longer since our server will have to load the entire site )
+</center>
